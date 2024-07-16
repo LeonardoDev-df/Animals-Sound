@@ -1,0 +1,1212 @@
+/* estilos.css */
+.butto {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    top: 5%;
+}
+
+.pesquisa{
+    position: fixed;
+   /* background-image:url("../images/botão-voltar.png");   */
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 105px; 
+    top: 250px;
+    margin-left: -10%;
+    display: none;
+    border-radius: 10px;
+    border-color: blueviolet;
+    color: black;
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+    width: 16em;
+    height: 10em;
+}
+
+
+.sair {
+    position: fixed;
+    background-image:url("../assets/images/botão-voltar.png"); 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 105px; 
+    top: 50px;
+    margin-left: 70%;
+    display: block;
+    border-radius: 10px;
+    border-color: red;
+    border: 1px solid;
+   
+    cursor: pointer;
+    width: 8em;
+    height: 4em;
+}
+
+
+/* Estilos para telas menores (modo retrato) */
+@media (min-width: 740px) or (max-height: 360px)   {
+    .botto {
+        height: auto;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .botao {
+        position: absolute;
+        top: 70px;
+        margin-right: 5%;
+        display: block;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: block;
+        width: 11em;
+        height: 2em;
+    }
+
+    .pesquisa{
+        position: fixed;
+       /* background-image:url("../images/botão-voltar.png");   */
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 105px; 
+        top: 250px;
+        margin-left: -10%;
+        display: none;
+        border-radius: 10px;
+        border-color: blueviolet;
+        color: black;
+        border: 1px solid;
+        font-weight: bold;
+        cursor: pointer;
+        width: 16em;
+        height: 10em;
+    }
+
+    .sair {
+        display: block;
+        top: 20px;
+        width: 15%;
+        height: 15%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    #botao-sair:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    #botao-crocodilo{
+        display: block;
+        background-image:url("../assets/images/Croc.jpg");
+        background-image: 30px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -50%;
+        top: 20px;
+        width: 12em ; 
+        height: 6em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    #botao-crocodilo:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    .input-croc {
+        display:none;
+        position: absolute;
+        background-image:url("../assets/images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 230px;
+        margin-left: -490px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .input-croc:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    
+    .div-croc {
+        display:none;
+        position: absolute;
+        top: 120px;
+        margin-left: 420px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border:none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-croc {
+        position: absolute;
+        background-image:url("../assets/images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 75px;
+        margin-right: -250px;
+        display:none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    .botao-converter-croc:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    #botao-golfi{
+        display:  none;
+        background-image:url("../assets/images/Golfin.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -50%;
+        top: 20px;
+        width: 10em !important; 
+        height: 10em;
+        border: none;
+        border-radius: 9px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    #botao-golfi:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .input-golfi {
+        display: none;
+        position: absolute;
+        background-image:url("../assets/images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 35px; 
+        top: 230px;
+        margin-left: -490px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .input-golfi:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    
+    .div-golfi {
+        display: none;
+        position: absolute;
+        top: 110px;
+        margin-left: 420px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-golfin {
+        position: absolute;
+        background-image:url("../assets/images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 65px;
+        margin-right: -250px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .botao-converter-golfin:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    #botao-cobra{
+        display:  none;
+        background-image:url("../assets/images/Snake.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -50%;
+        top: 20px;
+        width: 10em !important; 
+        height: 11em;
+        border: none;
+        border-radius: 9px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    #botao-cobra:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .input-snake {
+        display: none;
+        position: absolute;
+        background-image:url("../assets/images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 230px;
+        margin-left: -490px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 3.5em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .input-snake:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .div-snake {
+        display: none;
+        position: absolute;
+        top: 130px;
+        margin-left: 420px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-snake {
+        position: absolute;
+        background-image:url("../assets/images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 85px;
+        margin-right: -250px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .botao-converter-snake:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    #botao-panter{
+        display: none;
+        background-image:url("../assets/images/panter.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -50%;
+        top: 20px;
+        width: 10em !important; 
+        border: none;
+        height: 8em;
+        border-radius: 9px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    #botao-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .input-panter {
+        display: none;
+        position: absolute;
+        background-image:url("../assets/images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 230px;
+        margin-left: -490px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 3.5em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    .input-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    
+    .div-panter {
+        display: none;
+        position: absolute;
+        top: 125px;
+        margin-left: 450px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-panter {
+        position: absolute;
+        background-image:url("../assets/images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 80px;
+        margin-right: -280px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    .input-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    body {
+        line-height: 1.6; /* Ajuste o espaçamento entre linhas conforme necessário */
+    }
+}
+
+/* Estilos para telas menores (modo retrato) */
+@media (max-width: 730px) {
+    .botto {
+        height: auto;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    body {
+        line-height: 1.6; /* Ajuste o espaçamento entre linhas conforme necessário */
+    }
+
+    .botao {
+        position: absolute;
+        top: 90px;
+        margin-right: 5%;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 10em;
+        height: 3em;
+    }
+
+    .pesquisa{
+        position: fixed;
+       /* background-image:url("../images/botão-voltar.png");   */
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 105px; 
+        top: 250px;
+        margin-left: -10%;
+        display: none;
+        border-radius: 10px;
+        border-color: blueviolet;
+        color: black;
+        border: 1px solid;
+        font-weight: bold;
+        cursor: pointer;
+        width: 16em;
+        height: 10em;
+    }
+
+    .doubt {
+        display: none;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .sair {
+        display: block;
+        top: 20px;
+        width: 30%;
+        height: 7%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+   
+    #botao-sair:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    #botao-crocodilo{
+        display: none;
+        background-image:url("../assets/images/Croc.jpg");
+        background-image: 30px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -34%;
+        margin-top: -3%;
+        width: 12em !important; 
+        height: 6em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    #botao-crocodilo:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    .input-croc {
+        display: none;
+        position: absolute;
+        background-image:url("../assets/images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 50px; 
+        top: 560px;
+        margin-left: -270px;
+        padding: 0.45em;
+        border-radius: 6px;
+        border: none;
+        width: 4em;
+        height: 4.2em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .input-croc:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    .div-croc {
+        display: none;
+        position: absolute;
+        top: 390px;
+        margin-left: 170px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 9em;
+        height: auto;
+    }
+
+    .botao-converter-croc {
+        position: absolute;
+        background-image:url("../assets/images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 70px; 
+        top: 345px;
+        margin-left: 170px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .botao-converter-croc:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    
+#botao-golfi{
+    display: none;
+    background-image:url("../assets/images/Golfin.jpg");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 190px; 
+    margin-left: -34%;
+    margin-top: -3%;
+    width: 14em !important; 
+    height: 9.5em;
+    border-radius: 9px;
+    transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+}
+
+#botao-golfi:active {
+    transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+}
+
+    .input-golfi {
+        display: none;
+        position: absolute;
+        background-image:url("../assets/images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 50px; 
+        top: 560px;
+        margin-left: -270px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border:none;
+        width: 4em;
+        height: 4em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .input-golfi:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .div-golfi {
+        display: none;
+        position: absolute;
+        top: 410px;
+        margin-left: 85px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border:none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-golfin {
+        position: absolute;
+        background-image:url("../assets/images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 365px;
+        margin-left: 80px;
+        display:none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .botao-converter-golfin:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    #botao-cobra{
+        display: none;
+        background-image:url("../assets/images/Snake.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -34%;
+        margin-top: -3%;
+        width: 10em !important; 
+        height: 10.6em;
+        border-radius: 9px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    #botao-cobra:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .input-snake {
+        display: none;
+        position: absolute;
+        background-image:url("../assets/images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 560px;
+        margin-left: -230px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 3.6em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .input-snake:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    
+    .div-snake {
+        display: none;
+        position: absolute;
+        top: 450px;
+        margin-left: 90px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-snake {
+        position: absolute;
+        background-image:url("../assets/images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 405px;
+        margin-left: 90px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    .botao-converter-snake:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    #botao-panter{
+        display: none;
+        background-image:url("../assets/images/panter.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -34%;
+        margin-top: -3%;
+        width: 10em !important; 
+        height: 8.5em;
+        border-radius: 9px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    #botao-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .input-panter {
+        display: none;
+        position: absolute;
+        background-image:url("../assets/images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 560px;
+        margin-left: -240px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    .input-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    
+    .div-panter {
+        display: none;
+        position: absolute;
+        top: 430px;
+        margin-left: 90px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-panter {
+        position: absolute;
+        background-image:url("../assets/images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 380px;
+        margin-left: 90px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+    .botao-converter-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+}
+
+
+/* Telas maiores */
+@media (min-width: 1024px) {
+    .botto {
+        height: auto;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    body {
+        line-height: 1.6; /* Ajuste o espaçamento entre linhas conforme necessário */
+    }
+
+    .botao {
+        position: absolute;
+        top: 90px;
+        margin-right: 5%;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 110em;
+        height: 13em;
+    }
+
+    .pesquisa{
+        position: fixed;
+       /* background-image:url("../images/botão-voltar.png");   */
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 105px; 
+        top: 250px;
+        margin-left: -10%;
+        display: none;
+        border-radius: 10px;
+        border-color: blueviolet;
+        color: black;
+        border: 1px solid;
+        font-weight: bold;
+        cursor: pointer;
+        width: 16em;
+        height: 10em;
+    }
+
+    .doubt {
+        display: none;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .sair {
+        display: block;
+        top: 20px;
+        width: 12%;
+        height: 8%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+   
+    #botao-sair:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    
+
+
+    #botao-crocodilo {
+        display: none;
+        background-image: url("../images/Croc.jpg");
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position: center;
+        background-size: 190px; 
+        margin-left: -64%;
+        margin-top: 9%;
+        width: 12em !important; 
+        height: 6em;
+        cursor: pointer;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    }
+
+    #botao-crocodilo:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    .input-croc {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 50px; 
+        margin-left: -78%;
+        margin-top: 18%;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 4.5em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    .input-croc:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    .div-croc {
+        display: none;
+        position: absolute;
+        top: 460px;
+        margin-right: -390px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 9em;
+        height: auto;
+    }
+
+    .botao-converter-croc {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 70px; 
+        top: 415px;
+        margin-right: -790px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    .botao-converter-croc:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    
+#botao-golfi{
+    display:  none;
+    background-image:url("../images/Golfin.jpg");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 190px; 
+    margin-left: -64%;
+    margin-top: 3%;
+    width: 14em !important; 
+    height: 9.5em;
+    border-radius: 9px;
+    transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+    cursor: pointer;
+}
+
+#botao-golfi:active {
+    transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+}
+
+
+    .input-golfi {
+        display:  none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 50px; 
+        margin-left: -80%;
+        margin-top: 20%;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 4.5em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    .input-golfi:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    
+    .div-golfi {
+        display: none;
+        position: absolute;
+        top: 440px;
+        left: 50%; /* Ajuste para centralizar a div na horizontal */
+        transform: translateX(-50%); /* Centraliza a div na horizontal */
+        text-align: justify;
+        padding: 20px; /* Ajuste conforme necessário */
+        border-radius: 4px;
+        border: 1px solid #000; /* Adicione uma borda sólida (pode ajustar a cor e a largura conforme necessário) */
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        border: none;
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-golfin {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 395px;
+        margin-right: -840px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    .botao-converter-golfin:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    #botao-cobra{
+        display: none;
+        background-image:url("../images/Snake.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -64%;
+        margin-top: 3%;
+        width: 10em !important; 
+        height: 10.8em;
+        border-radius: 9px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    #botao-cobra:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .input-snake {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        margin-left: -75%;
+        margin-top: 21%;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    .input-snake:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+
+    
+    .div-snake {
+        display: none;
+        position: absolute;
+        top: 450px;
+        margin-right: -350px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-snake {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 405px;
+        margin-right: -760px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    .botao-converter-snake:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    #botao-panter{
+        display: none;
+        background-image:url("../images/panter.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -64%;
+        margin-top: 3%;
+        width: 14em !important; 
+        height: 8.5em;
+        border-radius: 9px;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+    #botao-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    .input-panter {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        margin-left: -80%;
+        margin-top: 23%;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 3.5em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    .input-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+    
+    .div-panter {
+        display: none;
+        position: absolute;
+        top: 480px;
+        margin-right: -290px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-panter {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 434px;
+        margin-right: -750px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 3em;
+        transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
+        cursor: pointer;
+    }
+
+    .botao-converter-panter:active {
+        transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
+    }
+}
+
