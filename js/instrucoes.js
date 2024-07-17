@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentlyPlaying;
 
     // Selecione todos os botões com a classe "animal-button"
-    const animalButtons = document.querySelectorAll(".animal-button");
+    const animalButtons = document.querySelectorAll("#animal-button");
 
     // Adicione um ouvinte de evento a cada botão
     animalButtons.forEach(function (button) {

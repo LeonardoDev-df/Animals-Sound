@@ -603,6 +603,14 @@ progress {
   height: auto;
 }
 
+.img-fluids {
+  max-width: 35%;
+  height: 90%; /* Ajusta a altura automaticamente para manter a proporção */
+  border-radius: 15px; /* Define bordas arredondadas */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner mantendo a proporção */
+}
+
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -5403,7 +5411,8 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .modal-xl {
-    --bs-modal-width: 1140px;
+    --bs-modal-width: 780px;
+    height: 10% !important;
   }
 }
 .modal-fullscreen {
@@ -7856,7 +7865,7 @@ textarea.form-control-lg {
 }
 
 .pb-5 {
-  padding-bottom: 3rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .ps-0 {
@@ -11039,8 +11048,8 @@ html {
 }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top:0.5rem;
+  padding-bottom: 0.1rem;
   background-color: #2c3e50;
   color: #fff;
 }

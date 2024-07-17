@@ -155,7 +155,7 @@ AFRAME.registerComponent("markerhandler", {
 
         // Evento sair modo realidade aumentada
         function redirecionarPagina() {
-            window.location.href = "https://ra-animals-sounds.vercel.app"; // Substitua com a URL para a qual você deseja redirecionar.
+            window.location.href = "https://animals-sound.vercel.app/"; // Substitua com a URL para a qual você deseja redirecionar.
         }
 
          // Evento de clique no botão do dúvida Crocodilo
