@@ -603,14 +603,6 @@ progress {
   height: auto;
 }
 
-.img-fluids {
-  max-width: 35%;
-  height: 90%; /* Ajusta a altura automaticamente para manter a proporção */
-  border-radius: 15px; /* Define bordas arredondadas */
-  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner mantendo a proporção */
-}
-
-
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -664,15 +656,25 @@ progress {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
+ 
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xl, .container-lg, .container-md, .container-sm, .container,  {
     max-width: 1140px;
+  }
+  .cols {
+    flex: 1 0 0%;
+    width: 340px !important;
+ 
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
+  }
+  .cols {
+    flex: 1 0 0%;
+    width: 260px;
   }
 }
 .row {
@@ -681,12 +683,11 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+
 }
 .row > * {
   flex-shrink: 0;
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -695,6 +696,10 @@ progress {
 
 .col {
   flex: 1 0 0%;
+}
+.cols {
+  flex: 1 0 0%;
+  width: 160px;
 }
 
 .row-cols-auto > * {
@@ -2001,7 +2006,8 @@ progress {
 
 .form-control {
   display: block;
-  width: 100%;
+  justify-content: center;
+  width: 50%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -2426,15 +2432,24 @@ textarea.form-control-lg {
 
 .form-floating {
   position: relative;
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select {
-  height: 5.5rem;
-  line-height: 1.25;
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form-floating > label {
   position: absolute;
+  justify-self: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -5411,8 +5426,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .modal-xl {
-    --bs-modal-width: 780px;
-    height: 10% !important;
+    --bs-modal-width: 1140px;
   }
 }
 .modal-fullscreen {
@@ -7865,7 +7879,7 @@ textarea.form-control-lg {
 }
 
 .pb-5 {
-  padding-bottom: 1rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .ps-0 {
@@ -10840,7 +10854,7 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4.5rem 0;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -10887,7 +10901,7 @@ html {
 
 .btn-xl {
   padding: 1rem 1.75rem;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
 }
 
 .btn-social {
@@ -10977,24 +10991,34 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
+  padding-top: calc(2rem + 74px);
   padding-bottom: 6rem;
+}
+.mastheads{
+  padding-top: calc(-2rem + 74px);
+  padding-bottom: 2rem;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 0.8rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 25rem;
 }
 
-.mastheads .masthead-avatars {
-  width: 5rem;
+.mastheads .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
 }
-
+.mastheads .masthead-subheading {
+  font-size: 0.8rem;
+}
+.mastheads .masthead-avatar {
+  width: 25rem;
+}
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
@@ -11005,7 +11029,7 @@ html {
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 .portfolio .portfolio-item {
@@ -11048,8 +11072,8 @@ html {
 }
 
 .footer {
-  padding-top:0.5rem;
-  padding-bottom: 0.1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #2c3e50;
   color: #fff;
 }
